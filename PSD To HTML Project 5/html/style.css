@@ -1,0 +1,347 @@
+/* Common Css */
+
+* {box-sizing:border-box;}
+
+body {
+    color: #979797;
+    font-family: georgia, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+/* Header Area */
+
+#header_area{
+    height: 120px;
+    border-top: 5px solid #40aed7;
+    background: #000;
+}
+.inner_header_area{}
+.logo_area{
+    float: left;
+    color: #fff;
+    margin: 20px 0;
+}
+.logo_area h2 {margin-bottom: 0;}
+.logo_area h2 a {
+    text-decoration:none;
+    color: #fff;
+}
+.logo_area p {
+    margin: 0;
+    color: #979797;
+}
+.menu_area {
+    float: right;
+    margin: 33px 0;
+}
+.menu_area ul {list-style: none;}
+.menu_area ul li {
+    display: inline-block;
+    margin: 0 0 0 5px;
+    position: relative;
+    height: 60px;
+}
+.menu_area ul li a {
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+}
+.menu_area ul li a:hover {
+    background: #40aed7;
+}
+.menu_area ul li:hover a {
+    background: #40aed7;
+}
+.menu_area ul li:hover ul li a {
+    background: #000;
+    color: #fff;
+}
+.menu_area ul li ul li a:hover {
+    background: #40aed7;
+    color: #fff;
+}
+.menu_area ul li ul li:hover a {
+    background: #40aed7;
+    color: #fff;
+}
+.menu_area ul li ul li:hover ul li a {
+    background: #000;
+    color: #fff;
+}
+.menu_area ul li ul li ul li a:hover {
+    background: #40aed7;
+    color: #fff;
+}
+
+/* DropDown Style */
+
+.menu_area ul ul {
+    position: absolute;
+    background: #000;
+    width: 120px;
+    left: -999999px;
+    padding: 0 0 0 0;
+    text-align: center;
+    top: 40px;
+    border-radius: 5px;
+}
+.menu_area ul li:hover ul {left: 0px;}
+.menu_area ul li:hover ul ul {left: -999999px;}
+.menu_area ul li ul li:hover ul {left: 120px;}
+.menu_area ul ul li {
+    margin: 0 auto;
+    padding: 0 0;
+    display: block;
+    height: 31px;
+}
+.menu_area ul ul li a {
+    margin: 0 auto;
+    padding: 5px 0;
+    display: block;
+    border-radius: 5px;
+}
+.menu_area ul ul ul {
+    left: 120px;
+    top: 0px;
+}
+.menu_area ul ul ul li {
+
+}
+.menu_area ul ul ul li a {
+
+}
+
+/* Top Area */
+
+#top_area {}
+
+.title_area h2 {
+    font-size: 120px;
+    font-weight: normal;
+    color: #333;
+    line-height: 1;
+    margin: 40px 0 0 0;
+}
+.service_area {margin: 40px 0 0 0;}
+.services {display: flex;}
+.service_title {
+    width: 225px;
+    line-height: 1;
+    border-top: 1px solid #e4e4e4;
+    text-align: center;
+    padding: 20px 15px 0 15px;
+    border-bottom: 1px solid #e4e4e4;
+    margin: 0 auto;
+}
+.service_title:hover {
+    background: #40aed7;
+    color: #fff;
+}
+.service_title:hover h2, .service_title:hover p {
+    background: #40aed7;
+    color: #fff;
+}
+.service_title a {
+    text-decoration: none;
+    color: #666;
+}
+.service_title img {}
+.service_title h2 {
+    font-size: 32px;
+    font-weight: normal;
+}
+.service_title p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #979797;
+}
+
+/* Middle Area */
+
+#middle_area {text-align: center;}
+#middle_area h2 {
+    font-size: 124px;
+    font-weight: normal;
+    color: #d3d3d3;
+}
+
+/* Bottom Area */
+
+#bottom_area {margin-bottom: 50px;}
+.team_members {display: flex;}
+.team_member {
+    width: 225px;
+    margin: 0 auto;
+}
+.team_member a img {}
+.team_member h3 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 0 0 20px 0;
+}
+.team_member p {}
+.team_member h4 a {
+    float: right;
+    text-decoration: none;
+    color: #40aed7;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+/* Footer Area */
+
+#footer_area {
+    background: #303030;
+    height: 400px;
+}
+.footer_items {display: flex;}
+.footer_item_01 {
+    width: 225px;
+    margin: 0 auto;
+}
+.footer_item_01 h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+}
+.footer_item_01 h3 {
+    font-size: 13px;
+    font-weight: bold;
+    color: #979797;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+.footer_item_01 h4 {
+    font-size: 10px;
+    font-weight: normal;
+    color: #666;
+    margin: 0;
+}
+.footer_item_01 h5 {
+    font-size: 10px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer_item_01 p {
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+.footer_item_01 h6 {
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer_item_01 h6 a {
+    color: #40aed7;
+    text-decoration: none;
+}
+
+.footer_item_02 {
+    width: 225px;
+    margin: 0 auto;
+}
+.footer_item_02 h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+}
+.footer_item_02 a {
+    display: block;
+    color: #40aed7;
+    text-decoration: none;
+    border-bottom: 1px solid #404040;
+    padding: 10px 0;
+}
+
+.footer_item_03 {
+    width: 225px;
+    margin: 0 auto;
+}
+.footer_item_03 h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 23px;
+}
+.footer_item_03 p {
+    font-size: 13px;
+    font-weight: normal;
+    color: #979797;
+}
+
+.footer_item_04 {
+    width: 225px;
+    margin: 0 auto;
+}
+.footer_item_04 h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+}
+.footer_item_04 form {
+
+}
+.footer_item_04 input {
+    padding: 12px 10px;
+    width: 100%;
+    background: #222;
+    color: #989898;
+    border: 1px solid #303030;
+    margin: 5px 0;
+    font-family: georgia;
+    font-weight: normal;
+    font-size: 13px;
+}
+.footer_item_04 textarea {
+    background: #222;
+    color: #989898;
+    border: 1px solid #282828;
+    width: 100%;
+    margin: 4px 0;
+    padding: 15px 10px;
+}
+.footer_item_04 input[type="submit"] {    
+    background: #40aed7;
+    color: #fff;
+    height: 80px;
+    width: 75px;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Copyright Area */
+
+#copyright_area {
+    height: 65px;
+    background: #2b2b2b;
+}
+.left_copyright_area {float: left;}
+.left_copyright_area h5 {
+    font-size: 13px;
+    font-weight: normal;
+}
+.right_copyright_area {float: right;}
+.right_copyright_area h5 {
+    font-size: 13px;
+    font-weight: normal;
+}
+
