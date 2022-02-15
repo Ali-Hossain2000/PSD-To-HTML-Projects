@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+    .search_area {
+        width: 70%;
+        float: right;
+    }
+
+    .title img {
+        float: left;
+    }
+
+    .title_details {
+        width: 68%;
+        display: inline-block;
+        padding-left: 5px;
+    }
+
+    .title_details h4 {
+        color: #97455f;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    #footer_area {
+        margin: 0 auto;
+        overflow-x: hidden;
+        padding: 0 10px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .scnd-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .fst-nav {
+        display: none;
+    }
+}
+
