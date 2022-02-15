@@ -1,0 +1,108 @@
+/* Tablet Layout */
+@media only screen and (min-width:200px) and (max-width:991px) {
+#header_area {height: 150px;}
+.logo_area {
+	float: none;
+	width: 100%;
+	height: 70px;
+	text-align: center;
+	margin: 70px 0 0 0;
+}
+#slider_area {
+	height: 380px;
+	margin: 20px 0 0 0;
+}
+.container {height: 380px;}
+.bx-wrapper {height: 380px;}
+.slider_caption {margin: 0px 0px 0 60px;}
+.slider_caption h2 {font-size: 40px;}
+.bx-wrapper img {
+	height: 300px;
+	width: 300px;
+	float: right;
+	margin: 22px 60px 0 0px;
+}
+.border_shadow {height: 0px;}
+.container {height: 0px;}
+#main_area {height: 750px;}
+.blog_area {width: 500px;}
+.footer_child_01 {width: 169px;}
+.footer_child_02 {width: 169px;}
+.footer_child_03 {width: 169px;}
+.footer_child_04 {width: 170px;}
+}
+
+/* Mobile Layout */
+
+@media only screen and (min-width:200px) and (max-width:480px) {
+    #slider_area {height: 650px;}
+    .slider_caption {
+        margin: 0px 0px 0 0px;
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        float: none;
+    }
+    .slider_caption h2 {font-size: 34px;}
+    .slider_caption p {padding: 0 35px;}
+    .bx-wrapper img {
+        margin: 0 auto;
+        float: none;
+    }
+    .bx-wrapper .bx-controls-direction a {margin-top: 60px;}
+
+    .project_items {display: block;}
+    .project_item {
+        width: 50%;
+        text-align: center;
+        margin-left: 0px;
+        float: left;
+    }
+
+    .border_shadow {margin: -12px 0 0px 0;}
+    #main_area {
+        height: 2000px;
+        text-align: center;
+    }
+    .blog_area {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+    .blog_items {
+        display: block;
+        margin: 35px 0 0 0;
+    }
+    .blog_item:first-child {margin: 0 auto;}
+    .blog_item {margin: 0 auto;}
+    .about_us_area {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #footer_area {
+        height: 1100px;
+        padding: 0 25px;
+    }
+    .footer_child_01 {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer_child_02 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer_child_03 {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer_child_04 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #copyright_area {margin: 15px 0 0 0;}
+    .left_copyright_area {width: 50%;}
+}
