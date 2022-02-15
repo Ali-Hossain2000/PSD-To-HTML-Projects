@@ -1,0 +1,278 @@
+@import "variables";
+@import "classes";
+@import "mixin";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    img {
+        width: 100%;
+    }
+    font-family: $regular-font-family;
+    font-size: $regular-font-size;
+    // overflow-x: hidden;
+}
+
+// Top Header
+
+#top_header {
+
+    height: 80px;
+
+    .row {
+        height: 80px;
+    }
+
+    h3 {
+        @extend .basic;
+        color: $color-deep-orange;
+        font-size: 25px;
+
+    }
+
+}
+
+// Navbar
+
+.navbar-dark .navbar-nav .nav-link {
+	color: $color-light-white;
+    &:hover {
+        color: $color-black;
+        background-color: $color-light-blue;
+    }
+}
+
+.navbar {
+
+    @extend .basic;
+    padding: 0;
+
+    a {
+        padding: 1rem;
+    }
+}
+
+.navbar-toggler:focus {box-shadow: none;}
+
+// Main Header
+
+#main_header {
+    background: $color-light-gray;
+    height: 500px;
+    font-family: $regular-font-family;
+
+    h1 {
+        font-size: 3rem;
+        color: $color-white;
+    }
+
+    h2 {
+        color: $color-regular-orange;
+    }
+}
+
+// Introduction Area
+
+#introduction_area {
+
+    .pt-5 {
+        padding-top: 8rem !important;
+    }
+
+    .intro_title {
+        h1 {
+            font-size: 40px;
+            color: $color-deep-orange;
+            font-family: $regular-font-family;
+        }
+
+        p {
+            font-size: $regular-font-size;
+            font-family: $regular-font-family;
+        }
+    }
+
+    .intro_details {
+
+        h3 {
+            padding: 20px 0px;
+        }
+    }
+
+}
+
+// DashBoard
+
+#dashboard {
+
+    .row {
+        background: $color-oxford-blue;
+        color: $color-white;
+    }
+
+    h2 {
+        color: $color-medium-orange;
+    }
+}
+
+// Contact Area
+
+#contact {
+    background: $color-Pickled-Bluewood;
+    color: $color-white;
+
+    p {
+        margin-bottom: 3rem;
+    }
+
+    .input-group {
+
+        .form-select {
+            background-color: $color-Pickled-Bluewood;
+            border: 1px solid #ced4da;
+            border-radius: 0rem; 
+            border: none;
+            border-bottom: 1px solid $color-Grayish-blue;
+            color: $color-Grayish-blue;
+        }
+    }
+
+
+    input[type="text"] {
+        @extend .input_common;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    input[type="email"] {
+        @extend .input_common;
+        width: 100%;
+        padding: 10px 0;
+        margin: 15px 0px 0 0;
+    }
+
+    .contact_message {
+        @extend .input_common;
+        width: 100%;
+        padding: 35px 0;
+        margin: 15px 0px 0 0;
+    }
+
+    .contact_button {
+        @extend .basic;
+        background: $color-medium-orange;
+        color: $color-white;
+        padding: 5px 15px;
+        float: right;
+        margin-top: 20px;
+        border: none;
+    }
+}
+
+// About Area 
+
+#about_us {
+    @extend .basic;
+    margin: 200px 80px;
+
+    .about_child {
+        background: #f9f9fb;
+        border: 1px solid #cbcacc;
+        margin: 20px 0;
+
+        .about_child_title {
+            margin: 45px 80px;
+        }
+
+        .about_child_support {
+
+            .inner_about_child_support {
+
+                position: relative;
+
+                img {
+                    width: 50%;
+                    padding: 25px 0;
+                }
+
+                h3 {
+                    font-size: 15px;
+                    border: 1px solid;
+                    padding: 5px;
+
+                }
+
+                // &::before {
+                //     content: '';
+                //     position: absolute;
+                //     display: block;
+                //     background-color: $color-black;
+                //     width: 2px;
+                //     height: 25px;
+                //     left: 50%;
+                //     top: 60%;
+                // }
+
+            }
+        }
+
+    }
+}
+
+// Gallery Area
+
+#gallery {
+
+    .gallery_title {
+        
+        h1 {color: $color-deep-orange;}
+        p {font-size: 16px;}
+    }
+}
+
+
+// Footer Area
+
+#footer {
+    background: $color-Pickled-Bluewood;
+    color: $color-white;
+
+    .child_footer {
+        
+    h5 {
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    }
+
+}
+
+// Copyright_area 
+
+#copyright_area {
+    background: $color-black;
+    color: $color-white;
+
+    .child_copyright_area {
+        
+        h6 {
+            margin: 0;
+        }
+    
+        .social_icon {
+            padding: 8px;
+            border: 1px solid white;
+            margin: 0 5px;
+        }
+    }
+
+}
+
+
+

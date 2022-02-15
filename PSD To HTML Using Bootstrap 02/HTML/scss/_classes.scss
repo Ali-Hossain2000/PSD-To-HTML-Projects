@@ -1,0 +1,18 @@
+.basic {
+    font-size: $regular-font-size;
+    font-weight: $regular-font-weight;
+    color: $color-black;
+    font-family: $regular-font-family;
+}
+
+.input_common {
+    border: none;
+        background: #2a3e47;
+        color: #b5b6b7;
+        border-bottom: 1px solid #b5b6b7;
+        margin: 0px 40px 0 0;
+
+        &:focus {
+            outline: none;
+        }
+}
